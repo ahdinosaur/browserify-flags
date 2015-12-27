@@ -1,0 +1,17 @@
+{
+  "name": "browserify-flags",
+  "description": "example of browserify `options._flags` bug",
+  "main": "index.js",
+  "scripts": {
+    "test": "browserify . -o bundle.js"
+  },
+  "browserify": {
+    "transform": [
+      "./transform"
+    ]
+  },
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^12.0.1"
+  }
+}
