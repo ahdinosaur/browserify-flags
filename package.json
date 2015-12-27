@@ -3,12 +3,7 @@
   "description": "example of browserify `options._flags` bug",
   "main": "index.js",
   "scripts": {
-    "test": "browserify . -o bundle.js"
-  },
-  "browserify": {
-    "transform": [
-      "./transform"
-    ]
+    "test": "browserify . -o bundle.js -t ./transform"
   },
   "license": "ISC",
   "dependencies": {
